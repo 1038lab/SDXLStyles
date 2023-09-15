@@ -118,7 +118,7 @@ class StyleSelectorXL(scripts.Script):
     styleNames = getStyles()
 
     def title(self):
-        return "SDXL Style"
+        return "SDXL Styles"
 
     def show(self, is_img2img):
         return scripts.AlwaysVisible
@@ -127,7 +127,7 @@ class StyleSelectorXL(scripts.Script):
         with gr.Group():
             with gr.Accordion("Style Selector", open=False):
                 is_enabled = gr.Checkbox(
-                    value=True, label="Enable Style Selector")
+                    value=False, label="Enable SDXL Style")
                 style = gr.Dropdown(
                     label='Select Preset', choices=self.styleNames, value='base')
                 pAd = gr.Textbox( label="Prompt Additions", interactive=False, value="Positive: \{prompt\}\nNegative: ")
