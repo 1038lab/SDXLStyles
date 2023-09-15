@@ -118,7 +118,7 @@ class StyleSelectorXL(scripts.Script):
     styleNames = getStyles()
 
     def title(self):
-        return "Style Selector"
+        return "SDXL Style"
 
     def show(self, is_img2img):
         return scripts.AlwaysVisible
